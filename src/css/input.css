@@ -1,34 +1,51 @@
 @import "tailwindcss";
-/* @config "../../tailwind.config.js"; */
+@import url("https://fonts.cdnfonts.com/css/lufga");
 @plugin "daisyui";
+
+@theme {
+	--color-my-primary: #252b42;
+	--color-my-secondary: #ffffff;
+	--color-my-tertiary: #737373;
+	--color-my-quaternary: #23a6f0;
+	--text-shadow-xl: 0 0px 50px rgb(0, 0, 0 / 0.25);
+	--breakpoint-mobile-sm: 480px;
+	--breakpoint-mobile: 640px;
+	--breakpoint-tablet: 768px;
+	--breakpoint-laptop-sm: 1024px;
+	--breakpoint-laptop: 1280px;
+	--breakpoint-desktop: 1440px;
+	--breakpoint-desktop-lg: 1600px;
+	--breakpoint-desktop-xl: 1920px;
+}
+
 @plugin "daisyui/theme" {
-	name: "shadcn";
-	default: true;
+	name: "light";
+	default: false;
 	prefersdark: false;
-	color-scheme: "dark";
-	--color-base-100: oklch(29% 0.136 325.661);
-	--color-base-200: oklch(40% 0.17 325.612);
-	--color-base-300: oklch(45% 0.211 324.591);
-	--color-base-content: oklch(95% 0.037 318.852);
-	--color-primary: oklch(0% 0 0);
-	--color-primary-content: oklch(100% 0 0);
-	--color-secondary: oklch(0% 0 0);
-	--color-secondary-content: oklch(100% 0 0);
-	--color-accent: oklch(80% 0.114 19.571);
-	--color-accent-content: oklch(25% 0.092 26.042);
-	--color-neutral: oklch(45% 0.211 324.591);
-	--color-neutral-content: oklch(97% 0.017 320.058);
-	--color-info: oklch(60% 0.126 221.723);
-	--color-info-content: oklch(98% 0.019 200.873);
-	--color-success: oklch(60% 0.118 184.704);
+	color-scheme: "light";
+	--color-base-100: oklch(0.99 0 0);
+	--color-base-200: oklch(96% 0.003 264.542);
+	--color-base-300: oklch(92% 0.006 264.531);
+	--color-base-content: oklch(21% 0.034 264.665);
+	--color-primary: oklch(0.88 0.165 123.88);
+	--color-primary-content: oklch(28% 0.109 3.907);
+	--color-secondary: oklch(0.39 0.1013 126.97);
+	--color-secondary-content: oklch(29% 0.066 243.157);
+	--color-accent: oklch(98% 0 0);
+	--color-accent-content: oklch(27% 0.105 12.094);
+	--color-neutral: oklch(27% 0.006 286.033);
+	--color-neutral-content: oklch(98% 0.002 247.839);
+	--color-info: oklch(44% 0.017 285.786);
+	--color-info-content: oklch(97% 0.014 254.604);
+	--color-success: oklch(27% 0.006 286.033);
 	--color-success-content: oklch(98% 0.014 180.72);
-	--color-warning: oklch(64% 0.222 41.116);
+	--color-warning: oklch(44% 0.017 285.786);
 	--color-warning-content: oklch(98% 0.016 73.684);
-	--color-error: oklch(57% 0.245 27.325);
-	--color-error-content: oklch(97% 0.013 17.38);
-	--radius-selector: 0.5rem;
-	--radius-field: 1rem;
-	--radius-box: 0.5rem;
+	--color-error: oklch(27% 0.006 286.033);
+	--color-error-content: oklch(96% 0.015 12.422);
+	--radius-selector: 0.25rem;
+	--radius-field: 0.25rem;
+	--radius-box: 0rem;
 	--size-selector: 0.25rem;
 	--size-field: 0.25rem;
 	--border: 1px;
@@ -42,5 +59,8 @@
 }
 
 @layer components {
-	@apply text-my-primary;
+}
+
+html {
+	font-family: "Lufga", sans-serif;
 }
