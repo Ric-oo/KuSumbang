@@ -11,7 +11,7 @@
 
 <body>
 	<!-- navbar section -->
-	<section class="mobile-sm:px-6 mobile:px-12 laptop-sm:px-24 py-6 bg-accent">
+	<section class="z-10 mobile-sm:px-6 mobile:px-12 laptop-sm:px-24 py-6 bg-accent/50 backdrop-blur-sm sticky top-0">
 		<div class="flex items-center justify-between">
 			<h1 class="text-neutral text-4xl font-semibold">Ku<span class="text-primary">Sumbang</span>.</h1>
 			<div class="gap-6 mobile-sm:hidden laptop-sm:flex text-neutral">
@@ -26,20 +26,20 @@
 	<!-- navbar section -->
 	<!-- main section -->
 	<section class="bg-accent flex justify-center">
-		<div class="mobile-sm:px-6 mobile:px-6 laptop-sm:px-8 desktop:px-12">
+		<div class="mobile-sm:px-6 mobile:px-10 laptop-sm:px-12 desktop:px-20">
 			<div class="flex justify-center">
 				<div class="bg-cover bg-center rounded-3xl desktop:max-w-[1440px]"
 					style="background-image: url(/src/asset/background/landing-background.png);">
 					<div
-						class="laptop-sm:py-20 laptop-sm:px-12 mobile-sm:py-8 mobile-sm:px-4 flex tablet:items-end mobile-sm:items-start mobile-sm:gap-4 laptop:flex-row mobile-sm:flex-col">
+						class="laptop-sm:py-20 laptop-sm:px-12 mobile-sm:py-8 mobile-sm:px-4 flex laptop-sm:items-end mobile-sm:items-start mobile-sm:gap-4 laptop-sm:flex-row mobile-sm:flex-col">
 						<div class="flex flex-col gap-4 desktop:mt-56 laptop-sm:mt-32 mobile-sm:mt-24">
 							<div class="flex items-center gap-4">
 								<hr class="text-accent w-1/12 max-w-32">
 								<h1 class="text-lg text-accent font-semibold">KuSumbang.</h1>
 							</div>
-							<div class="w-9/12">
+							<div class="w-10/12">
 								<h1
-									class="text-accent desktop:text-6xl laptop-sm:text-4xl mobile-sm:text-2xl font-semibold">
+									class="text-accent desktop:text-6xl laptop:text-5xl laptop-sm:text-4xl mobile-sm:text-2xl font-semibold">
 									Perairan Butuh <span class="text-primary">Pahlawan</span>, Apakah itu Kamu?</h1>
 							</div>
 							<h1
@@ -70,21 +70,21 @@
 					<h2 class="absolute text-neutral font-medium laptop:text-2xl mobile:text-xl mobile-sm:text-xl">
 						Total Funds</h2>
 				</div>
-				<div class="divider divider-horizontal divider-start hidden laptop-sm:block"></div>
+				<div class="divider divider-horizontal divider-start mobile-sm:hidden laptop-sm:flex"></div>
 				<div class="relative flex justify-center items-center">
 					<h1 class="relative text-info/10 font-medium laptop:text-8xl mobile:text-7xl mobile-sm:text-6xl">
 						120T</h1>
 					<h2 class="absolute text-neutral font-medium laptop:text-2xl mobile:text-xl mobile-sm:text-xl">
 						Trash Collected</h2>
 				</div>
-				<div class="divider divider-horizontal divider-start hidden laptop-sm:block"></div>
+				<div class="divider divider-horizontal divider-start mobile-sm:hidden laptop-sm:flex"></div>
 				<div class="relative flex justify-center items-center">
 					<h1 class="relative text-info/10 font-medium laptop:text-8xl mobile:text-7xl mobile-sm:text-6xl">
 						72M²</h1>
 					<h2 class="absolute text-neutral font-medium laptop:text-2xl mobile:text-xl mobile-sm:text-xl">
 						Ocean Saved</h2>
 				</div>
-				<div class="divider divider-horizontal divider-start hidden laptop-sm:block"></div>
+				<div class="divider divider-horizontal divider-start mobile-sm:hidden laptop-sm:flex"></div>
 				<div class="relative flex justify-center items-center">
 					<h1 class="relative text-info/10 font-medium laptop:text-8xl mobile:text-7xl mobile-sm:text-6xl">
 						1200</h1>
@@ -95,11 +95,288 @@
 		</div>
 	</section>
 	<!-- main section -->
-	<!-- description section -->
-	<section class="">
-
+	<!-- why section -->
+	<section class="relative">
+		<img class="absolute w-1/3 -top-32 desktop:-top-48 right-0 max-w-[500px] min-w-[300px] overflow-hidden"
+			src="/src/asset/background/Line1-.png" alt="">
+		<div class="flex justify-center mobile-sm:px-6 mobile:px-10 laptop-sm:px-8 laptop:px-12 desktop:px-20 py-8">
+			<div class="flex flex-col gap-16 desktop:max-w-[1440px]">
+				<div class="justify-between flex mobile-sm:flex-col laptop-sm:flex-row">
+					<div class="flex items-center gap-4 border border-neutral max-w-fit p-2 rounded-4xl max-h-fit">
+						<hr class="text-neutral w-8">
+						<h1 class="text-lg text-neutral font-semibold">Why?</h1>
+					</div>
+					<div class="desktop:w-8/12 laptop-sm:w-7/12 max-w-fit gap-4 flex flex-col">
+						<h1
+							class="text-neutral laptop:text-5xl laptop-sm:text-4xl mobile-sm:text-2xl desktop:max-w-[700px] laptop-sm:max-w-[550px] font-medium laptop-sm:leading-12 desktop:leading-16">
+							Mengapa <span class="text-primary">Pembersihan</span> Perairan Itu Penting?</h1>
+						<h1
+							class="leading-6 text-base font-medium text-info desktop:max-w-[850px] laptop-sm:max-w-[700px]">
+							upaya pembersihan perairan tidak hanya bermanfaat bagi lingkungan, tetapi juga meningkatkan
+							kualitas hidup bagi manusia
+							dan makhluk hidup lainnya. Setiap langkah kecil dapat menciptakan perubahan besar.
+						</h1>
+					</div>
+				</div>
+				<div class="flex laptop:gap-5 laptop-sm:gap-2 mobile-sm:flex-col laptop-sm:flex-row">
+					<div class="why-card">
+						<div class="flex gap-4 items-center">
+							<img class="p-2 bg-primary rounded-lg desktop:max-w-14 laptop-sm:max-w-12"
+								src="/src/asset/icon/why-icon-1.png" alt="">
+							<h1 class="text-2xl text-neutral leading-9 font-semibold">Lindungi Kehidupan <br> Akuatik
+							</h1>
+						</div>
+						<h1 class="max-w-[300px]">
+							Dengan membersihkan perairan dari sampah dan polusi, kita melindungi ekosistem dan
+							memastikan
+							habitat yang sehat bagi berbagai spesies untuk generasi mendatang.
+						</h1>
+						<img class="laptop-sm:min-w-[260px]" src="/src/asset/image/why-image-1.png" alt="">
+					</div>
+					<div class="why-card">
+						<div class="flex gap-4 items-center">
+							<img class="p-2 bg-primary rounded-lg desktop:max-w-14 laptop-sm:max-w-12"
+								src="/src/asset/icon/why-icon-2.png" alt="">
+							<h1 class="text-2xl text-neutral leading-9 font-semibold">Kesehatan Masyrakat
+							</h1>
+						</div>
+						<h1 class="max-w-[333px]">
+							Menggalang dana untuk membersihkan perairan membantu menyediakan air bersih yang esensial
+							bagi
+							kesehatan dan kesejahteraan komunitas kita.
+						</h1>
+						<img class="laptop-sm:min-w-[260px]" class="" src="/src/asset/image/why-image-2.png" alt="">
+					</div>
+					<div class="why-card">
+						<div class="flex gap-4 items-center">
+							<img class="p-2 bg-primary rounded-lg desktop:max-w-14 laptop-sm:max-w-12"
+								src="/src/asset/icon/why-icon-3.png" alt="">
+							<h1 class="text-2xl text-neutral leading-9 font-semibold">Ciptakan Aksi <br> Lingkungan
+							</h1>
+						</div>
+						<h1 class="max-w-[333px]">
+							Partisipasi Anda dalam pembersihan perairan membangun kesadaran dan mendorong tindakan
+							kolektif
+							untuk melindungi planet kita.
+						</h1>
+						<img class="laptop-sm:min-w-[260px]" src="/src/asset/image/why-image-3.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
-	<!-- description section -->
+	<!-- why section -->
+	<!-- donate section -->
+	<section>
+		<div class="desktop:px-20 py-8">
+			<div class="flex justify-center">
+				<div class="flex flex-col gap-10 desktop:max-w-[1440px]">
+					<div class="justify-between flex">
+						<div class="flex items-center gap-4 border border-neutral max-w-fit p-2 rounded-4xl max-h-fit">
+							<hr class="text-neutral w-8">
+							<h1 class="text-lg text-neutral font-semibold">Donate</h1>
+						</div>
+						<h1 class="laptop:text-5xl laptop:max-w-[500px] leading-16 font-medium text-neutral">Aksi <span
+								class="text-primary">Bersama</span> untuk Perairan Bersih</h1>
+						<div class="flex flex-col gap-4">
+							<h1 class="text-base text-info laptop:max-w-[477px] leading-6">Setiap donasi Anda akan
+								berkontribusi
+								pada proyek pembersihan perairan yang bertujuan untuk melindungi ekosistem, dan
+								menciptakan lingkungan yang lebih bersih dan sehat bagi masyarakat serta makhluk hidup
+								di
+								sekitar
+								kita.</h1>
+							<button
+								class="btn btn-success bg-primary border-none text-lg text-secondary font-medium py-8 max-w-fit">
+								Donasi Lebih Sekarang
+								<img class="max-w-6" src="/src/asset/icon/arrow-icon.png" alt="">
+							</button>
+						</div>
+					</div>
+					<div class="flex flex-col gap-5">
+						<div class="flex gap-5">
+							<div class="donate-card">
+								<img src="/src/asset/image/donate-image.png" alt="">
+								<div class="flex justify-between">
+									<div class="w-3/4 max-w-[350px]">
+										<h1 class="text-xl text-neutral font-semibold">South East Ocean Plastic Cleaning
+										</h1>
+										<h2 class="text-base text-info font-semibold">by OceanCare</h2>
+									</div>
+									<h1
+										class="p-3 bg-primary text-secondary rounded-lg max-w-fit max-h-fit font-medium text-2xl">
+										50%</h1>
+								</div>
+								<div class="flex flex-col gap-2">
+									<div class="flex justify-between">
+										<h1 class="font-medium textarea-md text-neutral">0%</h1>
+										<h1 class="font-medium textarea-md text-neutral">100%</h1>
+									</div>
+									<div class="bg-info/35 rounded-3xl">
+										<div class="p-1 bg-primary max-w-1/2 rounded-3xl"></div>
+									</div>
+									<h1 class="text-base text-info font-medium">$800/1600$</h1>
+								</div>
+								<button
+									class="btn btn-success bg-primary border-none text-lg text-secondary font-medium py-6 rounded-lg">
+									Donasi Sekarang
+									<img class="max-w-6" src="/src/asset/icon/arrow-icon.png" alt="">
+								</button>
+							</div>
+							<div class="donate-card">
+								<img src="/src/asset/image/donate-image.png" alt="">
+								<div class="flex justify-between">
+									<div class="w-3/4 max-w-[350px]">
+										<h1 class="text-xl text-neutral font-semibold">South East Ocean Plastic Cleaning
+										</h1>
+										<h2 class="text-base text-info font-semibold">by OceanCare</h2>
+									</div>
+									<h1
+										class="p-3 bg-primary text-secondary rounded-lg max-w-fit max-h-fit font-medium text-2xl">
+										50%</h1>
+								</div>
+								<div class="flex flex-col gap-2">
+									<div class="flex justify-between">
+										<h1 class="font-medium textarea-md text-neutral">0%</h1>
+										<h1 class="font-medium textarea-md text-neutral">100%</h1>
+									</div>
+									<div class="bg-info/35 rounded-3xl">
+										<div class="p-1 bg-primary max-w-1/2 rounded-3xl"></div>
+									</div>
+									<h1 class="text-base text-info font-medium">$800/1600$</h1>
+								</div>
+								<button
+									class="btn btn-success bg-primary border-none text-lg text-secondary font-medium py-6 rounded-lg">
+									Donasi Sekarang
+									<img class="max-w-6" src="/src/asset/icon/arrow-icon.png" alt="">
+								</button>
+							</div>
+							<div class="donate-card">
+								<img src="/src/asset/image/donate-image.png" alt="">
+								<div class="flex justify-between">
+									<div class="w-3/4 max-w-[350px]">
+										<h1 class="text-xl text-neutral font-semibold">South East Ocean Plastic Cleaning
+										</h1>
+										<h2 class="text-base text-info font-semibold">by OceanCare</h2>
+									</div>
+									<h1
+										class="p-3 bg-primary text-secondary rounded-lg max-w-fit max-h-fit font-medium text-2xl">
+										50%</h1>
+								</div>
+								<div class="flex flex-col gap-2">
+									<div class="flex justify-between">
+										<h1 class="font-medium textarea-md text-neutral">0%</h1>
+										<h1 class="font-medium textarea-md text-neutral">100%</h1>
+									</div>
+									<div class="bg-info/35 rounded-3xl">
+										<div class="p-1 bg-primary max-w-1/2 rounded-3xl"></div>
+									</div>
+									<h1 class="text-base text-info font-medium">$800/1600$</h1>
+								</div>
+								<button
+									class="btn btn-success bg-primary border-none text-lg text-secondary font-medium py-6 rounded-lg">
+									Donasi Sekarang
+									<img class="max-w-6" src="/src/asset/icon/arrow-icon.png" alt="">
+								</button>
+							</div>
+						</div>
+						<div class="flex gap-5">
+							<div class="donate-card">
+								<img src="/src/asset/image/donate-image.png" alt="">
+								<div class="flex justify-between">
+									<div class="w-3/4 max-w-[350px]">
+										<h1 class="text-xl text-neutral font-semibold">South East Ocean Plastic Cleaning
+										</h1>
+										<h2 class="text-base text-info font-semibold">by OceanCare</h2>
+									</div>
+									<h1
+										class="p-3 bg-primary text-secondary rounded-lg max-w-fit max-h-fit font-medium text-2xl">
+										50%</h1>
+								</div>
+								<div class="flex flex-col gap-2">
+									<div class="flex justify-between">
+										<h1 class="font-medium textarea-md text-neutral">0%</h1>
+										<h1 class="font-medium textarea-md text-neutral">100%</h1>
+									</div>
+									<div class="bg-info/35 rounded-3xl">
+										<div class="p-1 bg-primary max-w-1/2 rounded-3xl"></div>
+									</div>
+									<h1 class="text-base text-info font-medium">$800/1600$</h1>
+								</div>
+								<button
+									class="btn btn-success bg-primary border-none text-lg text-secondary font-medium py-6 rounded-lg">
+									Donasi Sekarang
+									<img class="max-w-6" src="/src/asset/icon/arrow-icon.png" alt="">
+								</button>
+							</div>
+							<div class="donate-card">
+								<img src="/src/asset/image/donate-image.png" alt="">
+								<div class="flex justify-between">
+									<div class="w-3/4 max-w-[350px]">
+										<h1 class="text-xl text-neutral font-semibold">South East Ocean Plastic Cleaning
+										</h1>
+										<h2 class="text-base text-info font-semibold">by OceanCare</h2>
+									</div>
+									<h1
+										class="p-3 bg-primary text-secondary rounded-lg max-w-fit max-h-fit font-medium text-2xl">
+										50%</h1>
+								</div>
+								<div class="flex flex-col gap-2">
+									<div class="flex justify-between">
+										<h1 class="font-medium textarea-md text-neutral">0%</h1>
+										<h1 class="font-medium textarea-md text-neutral">100%</h1>
+									</div>
+									<div class="bg-info/35 rounded-3xl">
+										<div class="p-1 bg-primary max-w-1/2 rounded-3xl"></div>
+									</div>
+									<h1 class="text-base text-info font-medium">$800/1600$</h1>
+								</div>
+								<button
+									class="btn btn-success bg-primary border-none text-lg text-secondary font-medium py-6 rounded-lg">
+									Donasi Sekarang
+									<img class="max-w-6" src="/src/asset/icon/arrow-icon.png" alt="">
+								</button>
+							</div>
+							<div class="donate-card">
+								<img src="/src/asset/image/donate-image.png" alt="">
+								<div class="flex justify-between">
+									<div class="w-3/4 max-w-[350px]">
+										<h1 class="text-xl text-neutral font-semibold">South East Ocean Plastic Cleaning
+										</h1>
+										<h2 class="text-base text-info font-semibold">by OceanCare</h2>
+									</div>
+									<h1
+										class="p-3 bg-primary text-secondary rounded-lg max-w-fit max-h-fit font-medium text-2xl">
+										50%</h1>
+								</div>
+								<div class="flex flex-col gap-2">
+									<div class="flex justify-between">
+										<h1 class="font-medium textarea-md text-neutral">0%</h1>
+										<h1 class="font-medium textarea-md text-neutral">100%</h1>
+									</div>
+									<div class="bg-info/35 rounded-3xl">
+										<div class="p-1 bg-primary max-w-1/2 rounded-3xl"></div>
+									</div>
+									<h1 class="text-base text-info font-medium">$800/1600$</h1>
+								</div>
+								<button
+									class="btn btn-success bg-primary border-none text-lg text-secondary font-medium py-6 rounded-lg">
+									Donasi Sekarang
+									<img class="max-w-6" src="/src/asset/icon/arrow-icon.png" alt="">
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- donate section -->
+	 <!-- join section -->
+	  <section>
+		<div style="background-image: url(/src/asset/);"></div>
+	  </section>
+	 <!-- join section -->
 </body>
 
 </html>
