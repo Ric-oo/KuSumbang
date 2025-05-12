@@ -7,11 +7,12 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="/src/css/output.css" />
 	<link href="https://fonts.cdnfonts.com/css/lufga" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 	<!-- navbar section -->
-	<section class="z-10 mobile-sm:px-6 mobile:px-12 laptop-sm:px-24 py-6 bg-accent/50 backdrop-blur-sm sticky top-0">
+	<section class="z-50 mobile-sm:px-6 mobile:px-12 laptop-sm:px-24 py-6 bg-accent/50 backdrop-blur-sm sticky top-0">
 		<div class="flex items-center justify-between">
 			<h1 class="text-neutral text-4xl font-semibold">Ku<span class="text-primary">Sumbang</span>.</h1>
 			<div class="gap-6 mobile-sm:hidden laptop-sm:flex text-neutral">
@@ -101,7 +102,7 @@
 			src="/src/asset/background/Line1-.png" alt="">
 		<div class="flex justify-center mobile-sm:px-6 mobile:px-10 laptop-sm:px-8 laptop:px-12 desktop:px-20 py-8">
 			<div class="flex flex-col gap-16 desktop:max-w-[1440px]">
-				<div class="justify-between flex mobile-sm:flex-col laptop-sm:flex-row">
+				<div class="laptop-sm:justify-between flex laptop-sm:flex-row mobile-sm:flex-col">
 					<div class="flex items-center gap-4 border border-neutral max-w-fit p-2 rounded-4xl max-h-fit">
 						<hr class="text-neutral w-8">
 						<h1 class="text-lg text-neutral font-semibold">Why?</h1>
@@ -111,55 +112,80 @@
 							class="text-neutral laptop:text-5xl laptop-sm:text-4xl mobile-sm:text-2xl desktop:max-w-[700px] laptop-sm:max-w-[550px] font-medium laptop-sm:leading-12 desktop:leading-16">
 							Mengapa <span class="text-primary">Pembersihan</span> Perairan Itu Penting?</h1>
 						<h1
-							class="leading-6 text-base font-medium text-info desktop:max-w-[850px] laptop-sm:max-w-[700px]">
+							class="leading-6 text-base font-medium text-info desktop:max-w-[850px] laptop-sm:max-w-[700px] mobile-sm:max-w-[200px]">
 							upaya pembersihan perairan tidak hanya bermanfaat bagi lingkungan, tetapi juga meningkatkan
 							kualitas hidup bagi manusia
 							dan makhluk hidup lainnya. Setiap langkah kecil dapat menciptakan perubahan besar.
 						</h1>
 					</div>
 				</div>
-				<div class="flex laptop:gap-5 laptop-sm:gap-2 mobile-sm:flex-col laptop-sm:flex-row">
-					<div class="why-card">
-						<div class="flex gap-4 items-center">
-							<img class="p-2 bg-primary rounded-lg desktop:max-w-14 laptop-sm:max-w-12"
-								src="/src/asset/icon/why-icon-1.png" alt="">
-							<h1 class="text-2xl text-neutral leading-9 font-semibold">Lindungi Kehidupan <br> Akuatik
-							</h1>
+				<div class="swiper w-[1440px]">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="why-card">
+								<div class="flex gap-4 items-center">
+									<img class="p-2 bg-primary rounded-lg desktop:max-w-14 mobile-sm:max-w-10 laptop-sm:max-w-12"
+										src="/src/asset/icon/why-icon-1.png" alt="">
+									<h1
+										class="laptop-sm:text-2xl mobile-sm:text-xl text-neutral leading-9 font-semibold">
+										Lindungi Kehidupan <br>
+										Akuatik
+									</h1>
+								</div>
+								<h1 class="mobile-sm:max-w-[230px] laptop-sm:max-w-[260px] desktop:max-w-[333px]">
+									Dengan membersihkan perairan dari sampah dan polusi, kita melindungi ekosistem
+									dan
+									memastikan
+									habitat yang sehat bagi berbagai spesies untuk generasi mendatang.
+								</h1>
+								<img class="mobile-sm:max-w-[200px] laptop-sm:max-w-[260px] desktop:max-w-[333px]"
+									src="/src/asset/image/why-image-1.png" alt="">
+							</div>
+
 						</div>
-						<h1 class="max-w-[300px]">
-							Dengan membersihkan perairan dari sampah dan polusi, kita melindungi ekosistem dan
-							memastikan
-							habitat yang sehat bagi berbagai spesies untuk generasi mendatang.
-						</h1>
-						<img class="laptop-sm:min-w-[260px]" src="/src/asset/image/why-image-1.png" alt="">
-					</div>
-					<div class="why-card">
-						<div class="flex gap-4 items-center">
-							<img class="p-2 bg-primary rounded-lg desktop:max-w-14 laptop-sm:max-w-12"
-								src="/src/asset/icon/why-icon-2.png" alt="">
-							<h1 class="text-2xl text-neutral leading-9 font-semibold">Kesehatan Masyrakat
-							</h1>
+						<div class="swiper-slide">
+							<div class="why-card">
+								<div class="flex gap-4 items-center">
+									<img class="p-2 bg-primary rounded-lg desktop:max-w-14 mobile-sm:max-w-10 laptop-sm:max-w-12"
+										src="/src/asset/icon/why-icon-2.png" alt="">
+									<h1
+										class="laptop-sm:text-2xl mobile-sm:text-xl text-neutral leading-9 font-semibold">
+										Kesehatan Masyrakat
+									</h1>
+								</div>
+								<h1 class="mobile-sm:max-w-[230px] laptop-sm:max-w-[260px] desktop:max-w-[333px]">
+									Menggalang dana untuk membersihkan perairan membantu menyediakan air bersih yang
+									esensial
+									bagi
+									kesehatan dan kesejahteraan komunitas kita.
+								</h1>
+								<img class="mobile-sm:max-w-[200px] laptop-sm:max-w-[260px] desktop:max-w-[333px]"
+									class="" src="/src/asset/image/why-image-2.png" alt="">
+							</div>
 						</div>
-						<h1 class="max-w-[333px]">
-							Menggalang dana untuk membersihkan perairan membantu menyediakan air bersih yang esensial
-							bagi
-							kesehatan dan kesejahteraan komunitas kita.
-						</h1>
-						<img class="laptop-sm:min-w-[260px]" class="" src="/src/asset/image/why-image-2.png" alt="">
-					</div>
-					<div class="why-card">
-						<div class="flex gap-4 items-center">
-							<img class="p-2 bg-primary rounded-lg desktop:max-w-14 laptop-sm:max-w-12"
-								src="/src/asset/icon/why-icon-3.png" alt="">
-							<h1 class="text-2xl text-neutral leading-9 font-semibold">Ciptakan Aksi <br> Lingkungan
-							</h1>
+						<div class="swiper-slide">
+							<div class="why-card">
+								<div>
+									<div class="flex gap-4 items-center">
+										<img class="p-2 bg-primary rounded-lg desktop:max-w-14 mobile-sm:max-w-10 laptop-sm:max-w-12"
+											src="/src/asset/icon/why-icon-3.png" alt="">
+										<h1
+											class="laptop-sm:text-2xl mobile-sm:text-xl text-neutral leading-9 font-semibold">
+											Ciptakan Aksi <br> Lingkungan
+										</h1>
+									</div>
+									<h1 class="mobile-sm:max-w-[230px] laptop-sm:max-w-[260px] desktop:max-w-[333px]">
+										Partisipasi Anda dalam pembersihan perairan membangun kesadaran dan
+										mendorong
+										tindakan
+										kolektif
+										untuk melindungi planet kita.
+									</h1>
+								</div>
+								<img class="mobile-sm:max-w-[200px] laptop-sm:max-w-[260px] desktop:max-w-[333px]"
+									src="/src/asset/image/why-image-3.png" alt="">
+							</div>
 						</div>
-						<h1 class="max-w-[333px]">
-							Partisipasi Anda dalam pembersihan perairan membangun kesadaran dan mendorong tindakan
-							kolektif
-							untuk melindungi planet kita.
-						</h1>
-						<img class="laptop-sm:min-w-[260px]" src="/src/asset/image/why-image-3.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -372,11 +398,118 @@
 		</div>
 	</section>
 	<!-- donate section -->
-	 <!-- join section -->
-	  <section>
-		<div style="background-image: url(/src/asset/);"></div>
-	  </section>
-	 <!-- join section -->
+	<!-- join section -->
+	<section class=>
+		<div class="flex justify-center">
+			<div class="z-10 mobile-sm:bg-auto laptop-sm:bg-cover bg-center max-w-[1440px]"
+				style="background-image: url(/src/asset/background/Join-Background.png);">
+				<div class="laptop-sm:mt-0 px-24 py-36 relative">
+					<div
+						class="mobile-sm:px-0 laptop-sm:px-0 flex flex-col gap-4 absolute top-1/2 left-1/2 -translate-1/2 items-center">
+						<div class="flex flex-col text-center">
+							<h1 class="font-medium text-neutral text-2xl">jadilah Suara untuk Perairan Bersih</h1>
+							<h1
+								class="font-medium text-neutral desktop::text-[190px] laptop-sm:text-[140px] laptop-sm:leading-52">
+								217,924+</h1>
+							<h1 class="font-medium text-neutral text-2xl">Orang sudah bergabung</h1>
+						</div>
+						<button
+							class="btn btn-success p-8 bg-primary border-none text-lg text-secondary font-medium py-6 rounded-lg max-w-fit">
+							Donasi Sekarang
+							<img class="max-w-6" src="/src/asset/icon/arrow-icon.png" alt="">
+						</button>
+					</div>
+					<img class="mobile-sm:hidden laptop-sm:block" src="/src/asset/image/Join-Image.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- join section -->
+	<!-- footer section -->
+	<section class="py-8">
+		<div class="flex justify-center">
+			<div class="desktop:max-w-[1440px]">
+				<div class="laptop-sm:py-16 laptop-sm:px-12 mobile-sm:py-16 mobile-sm:px-4 bg-zinc-900 rounded-2xl">
+					<div class="flex flex-col gap-16">
+						<div class="flex mobile-sm:flex-col laptop-sm:flex-row gap-8 justify-between">
+							<div class="flex flex-col gap-4 laptop-sm:items-start mobile-sm:items-center">
+								<h1 class="text-5xl text-accent font-semibold">Ku<span
+										class="text-primary">Sumbang</span>.
+								</h1>
+								<h1 class="text-base text-accent/80 desktop:max-w-[500px] laptop-sm:max-w-[300px] mobile:max-w-[500px] mobile-sm:max-w-[350px] laptop-sm:text-left mobile-sm:text-center">Perusahaan kami berkomitmen
+									untuk
+									melindungi dan memulihkan perairan melalui inisiatif
+									pembersihan yang berkelanjutan
+									dan edukasi masyarakat.</h1>
+								<div class="flex desktop:flex-row mobile-sm:flex-col gap-4 mobile-sm:items-center">
+									<a class="flex max-w-fit gap-2 text-accent font-medium text-base items-center px-5 py-2 border border-info rounded-xl bg-zinc-900 hover:invert transition"
+										href="#"><img class="max-w-8" src="/src/asset/icon/instagram-icon.png"
+											alt="">Instagram</a>
+									<a class="flex max-w-fit gap-2 text-accent font-medium text-base items-center px-5 py-2 border border-info rounded-xl bg-zinc-900 hover:invert transition"
+										href="#"><img class="max-w-8" src="/src/asset/icon/facebook-icon.png"
+											alt="">Facebook</a>
+									<a class="flex max-w-fit gap-2 text-accent font-medium text-base items-center px-5 py-2 border border-info rounded-xl bg-zinc-900 hover:invert transition"
+										href="#"><img class="max-w-8" src="/src/asset/icon/youtube-icon.png"
+											alt="">Youtube</a>
+								</div>
+							</div>
+							<div class="flex flex-col laptop-sm:items-end mobile-sm:items-center gap-12 ">
+								<div class="flex flex-col gap-4">
+									<div class="flex items-center desktop:gap-32 laptop-sm:gap-16 border-b border-info">
+										<input
+											class="bg-transparent py-6 px-8 mobile:text-3xl mobile-sm:text-xl text-accent placeholder:text-accent border-none"
+											type="text" placeholder="Enter Your Email">
+										<a href="#" class="bg-primary p-3 rounded-4xl"><img class="max-w-6"
+												src="/src/asset/icon/arrow-icon.png" alt=""></a>
+									</div>
+									<h1 class="textarea-md text-accent/80">*Untuk mendapatkan update & kondisi perairan
+										terbaru
+									</h1>
+								</div>
+								<div class="flex mobile-sm:flex-col laptop-sm:flex-row gap-10">
+									<div class="email-downtext">
+										<h1 class="email-header">Pages</h1>
+										<a href="#" class="email-text">Home</a>
+										<a href="#" class="email-text">Donation</a>
+										<a href="#" class="email-text">How it Works</a>
+										<a href="#" class="email-text">About Us</a>
+									</div>
+									<div class="email-downtext">
+										<h1 class="email-header">Ogranization</h1>
+										<a href="#" class="email-text">OceanCare</a>
+										<a href="#" class="email-text">Pandawara</a>
+										<a href="#" class="email-text">Kiri&left.org</a>
+										<a href="#" class="email-text">WaterMatter</a>
+										<a href="#" class="email-text">AquaCare</a>
+									</div>
+									<div class="email-downtext">
+										<h1 class="email-header">Support</h1>
+										<a href="#" class="email-text">Help Center</a>
+										<a href="#" class="email-text">Contact Us</a>
+										<a href="#" class="email-text">Term of Use</a>
+										<a href="#" class="email-text">Privacy</a>
+									</div>
+									<div class="email-downtext">
+										<a href="#" class="email-header">Company</a>
+										<a href="#" class="email-text">Careers</a>
+										<a href="#" class="email-text">Open Funding</a>
+										<a href="#" class="email-text">Donation Option</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-center space-y-4">
+							<hr class="text-info">
+							<h1 class="textarea-md text-accent/80">Copyright © 2024 Corsa, inc. All Right Reserved</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- footer section -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="main.js"></script>
 </body>
 
 </html>
