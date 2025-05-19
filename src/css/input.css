@@ -60,19 +60,19 @@
 
 @layer components {
 	.why-card {
-		@apply flex flex-col justify-between laptop-sm:gap-2 laptop:gap-4 mobile-sm:p-4 laptop:p-8 laptop-sm:max-h-none border-zinc-300 border rounded-2xl bg-accent max-w-fit w-4/12 grayscale-100 hover:grayscale-0 laptop:hover:scale-105 transition-all duration-300;
+		@apply flex flex-col items-center  justify-between laptop-sm:gap-2 laptop:gap-4 mobile-sm:p-4 laptop:p-8 laptop-sm:max-h-none border-zinc-300 border rounded-2xl bg-accent max-w-fit w-4/12 grayscale-100 hover:grayscale-0;
 	}
 	.donate-card {
-		@apply flex flex-col justify-between laptop-sm:gap-2 laptop:gap-4 laptop-sm:p-4 laptop:p-6 border-zinc-300 border rounded-2xl bg-accent max-w-fit w-8/12 hover:scale-105 transition-all duration-300;
+		@apply flex flex-col justify-between laptop-sm:gap-2 laptop:gap-4 mobile-sm:p-3 laptop-sm:p-4 laptop:p-6 border-zinc-300 border rounded-2xl bg-accent max-w-fit w-8/12 hover:scale-105 transition-all duration-300;
 	}
 	.email-downtext {
-		@apply flex flex-col gap-3
+		@apply flex flex-col gap-3;
 	}
 	.email-header {
-		@apply text-xl font-semibold text-accent
+		@apply text-xl font-semibold text-accent;
 	}
 	.email-text {
-		@apply text-base text-accent/80
+		@apply text-base text-accent/80;
 	}
 }
 
